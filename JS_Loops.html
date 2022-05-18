@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #333;color:limegreen;">
+    <script>
+        document.write("<h1>For Loop Table</h1>");
+        // for loop table
+        var number = parseInt(prompt("Enter your Number : "));
+        for(var i = 1; i <= 10; i++)
+        {
+            var count = i * number;
+            document.write(`${number} * ${i} = ${count} <br>`);
+        }
+
+        document.write("<h1>ForEach Loop</h1>");
+
+        // forEach loop
+        var a = ["Ahmad", "Faraz", "Usman", "Umar"];
+        a.forEach(function(value, index){
+            document.write(`Hello ${value} your index number is => ${index} <br>`);
+        });
+
+        document.write("<h1>For In Loop</h1>");
+        // For In Loop
+        var b = {
+            FirstName : "Ahmad",
+            LastName : "Faraz",
+            age : 23
+        };
+
+        for(i in a)
+        {
+            document.write(`${i} : ${a[i]} <br>`);
+        }
+
+    </script>
+</body>
+</html>
